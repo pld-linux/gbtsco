@@ -1,12 +1,15 @@
+#TODO
+#- gbtsco.desktop file - gksudo gbtsco
 Summary:	gbtsco - Manager that help connection with bluetooth headset
 Summary(pl.UTF-8):	gkbtsco - Menager pomagający podłączyć zestaw słuchawkowy Bluetooth
 Name:		gbtsco
 Version:	0.2
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.stgraber.org/download/projects/gbtsco/%{name}-%{version}.tar.gz
 # Source0-md5:	6b802f4e1142cecbb7a0eec0419d99b1
+Patch0:		%{name}-path_to_glade.patch
 URL:		http://www.stgraber.org/category/gbtsco/
 BuildRequires:	rpmbuild(macros) >= 1.197
 %pyrequires_eq	python
@@ -31,6 +34,7 @@ zestawu słuchawkowego jako urządzenia dźwiękowego.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
