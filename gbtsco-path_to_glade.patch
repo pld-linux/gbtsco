@@ -1,0 +1,12 @@
+diff -uNr gbtsco-0.2.orig/gbtsco gbtsco-0.2/gbtsco
+--- gbtsco-0.2.orig/gbtsco	2007-05-20 18:07:09.000000000 +0000
++++ gbtsco-0.2/gbtsco	2007-06-28 20:48:45.000000000 +0000
+@@ -101,7 +101,7 @@
+ def EnableConnect(*args):
+ 	btnConnect.set_sensitive(True)
+ 
+-gbtsco=gtk.glade.XML("gbtsco.glade")
++gbtsco=gtk.glade.XML("/usr/share/gbtsco/gbtsco.glade")
+ MainWindow=gbtsco.get_widget("BTSCOConfig")
+ lblConnected=gbtsco.get_widget("lblConnected")
+ btnDisconnect=gbtsco.get_widget("btnDisconnect")
