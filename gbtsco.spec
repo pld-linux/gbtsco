@@ -13,7 +13,7 @@ BuildRequires:	rpmbuild(macros) >= 1.197
 Requires:	bluez-hcidump
 Requires:	bluez-utils
 Requires:	btsco
-Requires:	gnome-bluetooth
+Requires:	python-pybluez
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
