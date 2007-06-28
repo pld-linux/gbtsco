@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=gksudo gbtsco
+Icon=bt-logo
+Type=Application
+Name=gbtsco
+GenericName=Gbtsco
+Categories=GNOME;Application;Settings;
+Comment=Gbtsco - A Bluetooth Headset manager for gnome.
