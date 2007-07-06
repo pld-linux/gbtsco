@@ -1,5 +1,5 @@
 Summary:	gbtsco - Manager that help connection with bluetooth headset
-Summary(pl.UTF-8):	gbtsco - Menager pomagający podłączyć zestaw słuchawkowy Bluetooth
+Summary(pl.UTF-8):	gbtsco - Zarządca pomagający podłączyć zestaw słuchawkowy Bluetooth
 Name:		gbtsco
 Version:	0.2
 Release:	2
@@ -16,21 +16,20 @@ Requires:	bluez-hcidump
 Requires:	bluez-utils
 Requires:	btsco
 Requires:	gksudo
-Requires:	kernel%{_alt_kernel}-char-btsco
 Requires:	python-pybluez
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 gbtsco is a manager that help connection with bluetooth headset to use
-with xmms, audacity or skype. The features of this GUI included the
-starting daemon sdpd, hcid and rfcomm and scan MAC address to use with
-BTSCO in order to select headphone as sound device.
+with XMMS, audacity or skype. The features of this GUI included the
+starting sdpd, hcid and rfcomm daemons and scan MAC address to use
+with BTSCO in order to select headphone as sound device.
 
 %description -l pl.UTF-8
-gbtsco to menager pomagający przy podłączaniu zestawu słuchawkowego
+gbtsco to zarządca pomagający przy podłączaniu zestawu słuchawkowego
 Bluetooth do używania z XMMS-em, audacity czy skypem. Możliwości
-interfejsu graficznego obejmują: uruchomienie demona sdpd, hcid i 
-rfcomm oraz skanowanie adresów MAC aby używać ich z BTSCO w celu wyboru
+interfejsu graficznego obejmują: uruchomienie demona sdpd, hcid i
+rfcomm oraz skanowanie adresów MAC do użycia z BTSCO w celu wyboru
 zestawu słuchawkowego jako urządzenia dźwiękowego.
 
 %prep
@@ -51,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/%{name}
-%dir %{_datadir}/%{name}/
-%attr(755,root,root) %{_datadir}/%{name}/%{name}.glade
+%dir %{_datadir}/%{name}
+%{_datadir}/%{name}/%{name}.glade
 %{_mandir}/man1/%{name}.1*
 %{_desktopdir}/%{name}.desktop
