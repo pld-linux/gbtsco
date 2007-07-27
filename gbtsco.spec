@@ -2,7 +2,7 @@ Summary:	gbtsco - Manager that help connection with bluetooth headset
 Summary(pl.UTF-8):	gbtsco - Zarządca pomagający podłączyć zestaw słuchawkowy Bluetooth
 Name:		gbtsco
 Version:	0.2
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.stgraber.org/download/projects/gbtsco/%{name}-%{version}.tar.gz
@@ -15,7 +15,7 @@ BuildRequires:	rpmbuild(macros) >= 1.197
 Requires:	bluez-hcidump
 Requires:	bluez-utils
 Requires:	btsco
-Requires:	gksudo
+Requires:	gksu
 Requires:	python-pybluez
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
