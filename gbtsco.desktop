@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Exec=gksudo gbtsco
 Icon=bt-logo
 Type=Application
